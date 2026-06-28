@@ -1,129 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 /* "SN Pro", sans-serif; */
 
-* { box-sizing: border-box; /* cuando agrego padding o margin a mis elementos esto hace que no crezcan mas de esos valores que les di */
+* {
+  box-sizing: border-box; /* cuando agrego padding o margin a mis elementos esto hace que no crezcan mas de esos valores que les di */
 }
 
-body{font-family: "SN Pro", sans-serif;
- margin: 0;
- }
+body {
+  font-family: "SN Pro", sans-serif;
+  margin: 0;
+}
 
-h1 {font-size: 3.5em; color: #ffffff;} /* em es tamaño relativo al tamaño de la fuente que le di */
-h2 {font-size: 2.7em;}
-h3 {font-size: 2em; 
-margin: 0px;}
-p{font-size: 1.5em;}
+h1 {
+  font-size: 3.5em;
+  color: #ffffff;
+} /* em es tamaño relativo al tamaño de la fuente que le di */
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+  margin: 0px;
+}
+p {
+  font-size: 1.5em;
+}
 
 .boton {
-    font-size: 1em;
-    padding: 10px 20px;
-    background-color: #1e991e;
-    color: #ffffff;
-    border: 1px solid #46464698;
-    border-radius: 10px;
-    text-decoration: none;
-    box-shadow: 4px 4px 4px #69676746;
-    font-weight: bold;
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #1e991e;
+  color: #ffffff;
+  border: 1px solid #46464698;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 4px 4px 4px #69676746;
+  font-weight: bold;
 }
 
 .boton:hover {
-    background-color: #084108; 
+  background-color: #084108;
 }
 
 .container {
-    max-width: 1400px;
-    margin: auto;
-    background-color: #e7e7e7;
+  max-width: 1400px;
+  margin: auto;
 }
 
 header {
-    background-color: #e7e7e7;
-    box-shadow: 3px 3px 3px rgba(1, 22, 1, 0.432)
+  background-color: #f7f7f7;
+  box-shadow: 3px 3px 3px rgba(1, 22, 1, 0.432);
 }
 
 header .logo {
-    margin:0;
-    padding: 25px 30px;
-    font-size: 1.6em;
-    color:#084108;
-    font-weight: bold;
+  margin: 0;
+  padding: 25px 30px;
+  font-size: 1.6em;
+  color: #084108;
+  font-weight: bold;
 }
 
-header .container { /* el espacio (por ej entre header y .container, quiere decor que selecciono ese elemento segundo dentro del elemento contenedor que es header */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* centrado horizontalmente */
+header .container {
+  /* el espacio (por ej entre header y .container, quiere decor que selecciono ese elemento segundo dentro del elemento contenedor que es header */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centrado horizontalmente */
 }
 
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 header a {
-    text-decoration: none;
-    color: #042504;
-    padding: 5px 12px; /* 5px arriba y abajo; 12px a los costados */
-    font-weight: bold;
+  text-decoration: none;
+  color: #042504;
+  padding: 5px 12px; /* 5px arriba y abajo; 12px a los costados */
+  font-weight: bold;
 }
 
 header a:hover {
-    color: #57c057;
+  color: #57c057;
 }
 
 /* estilizando el hero */
 
 #hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 90vh;
-    background-color: #e7e7e7;
-     /* 1. Carga la imagen de fondo */
-  background-image: url('../assets/imagenes/tecno.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  background-color: #e7e7e7;
+  /* 1. Carga la imagen de fondo */
+  background-image: url("../assets/imagenes/tecno.jpg");
 
-    /* 2. Estira la imagen para cubrir el espacio sin deformarse */
+  /* 2. Estira la imagen para cubrir el espacio sin deformarse */
   background-size: cover;
 
-    /* 3. Centra el fondo horizontal y verticalmente */
+  /* 3. Centra el fondo horizontal y verticalmente */
   background-position: center center;
 
-    /* 4. Evita que la imagen se repita en pantallas muy grandes */
+  /* 4. Evita que la imagen se repita en pantallas muy grandes */
   background-repeat: no-repeat;
-
 }
 
 /* sección cards */
 
 #cards {
-    background-color: #e7e7e7;
-     display: flex;
-    flex-direction: column;
-    justify-content:start;
-    align-items: center;
-    text-align: center;
-   }
+  background-color: #f7f7f7;
+}
 
+#cards .containercursos {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+}
 
 .cartas {
-    height: 360px;
-    border: 1px solid #8d8d8d;
-   padding: 0px 15px 0px 15px;  /*Arriba, Derecha, Abajo e Izquierda */
-    gap: 15px;
-    margin: 15px;
-     box-shadow: 4px 4px 4px #69676746;
-     border-radius: 8px;
-     align-content: center;
+  height: 360px;
+  border: 1px solid #8d8d8d;
+  padding: 0px 15px 0px 15px; /*Arriba, Derecha, Abajo e Izquierda */
+  gap: 15px;
+  margin: 15px;
+  box-shadow: 4px 4px 4px #69676746;
+  border-radius: 8px;
+  align-content: center;
+  color: #084108;
 }
 
 .cartas p {
-    padding: 0px 0px 15px 0px;
-    font-size: 16px;
-  }
+  padding: 0px 0px 15px 0px;
+  font-size: 16px;
+}
 
-
+.tituloscards {
+    color: #1e991e;
+}
