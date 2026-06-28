@@ -12,9 +12,12 @@ body {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3.5em; /* em es tamaño relativo al tamaño de la fuente que le di */
   color: #ffffff;
-} /* em es tamaño relativo al tamaño de la fuente que le di */
+  padding: 10px;
+  text-wrap: pretty;
+} 
+
 h2 {
   font-size: 2.7em;
 }
@@ -140,5 +143,66 @@ header a:hover {
 }
 
 .tituloscards {
-    color: #1e991e;
+  color: #1e991e;
+}
+
+/*seccion #contacto */
+#contacto {
+  background-color: #534d4d;
+  color: #e7e7e7;
+  text-align: center;
+}
+#contacto h2 {
+  margin: 20px 10px; /*arriba/abajo y el segundo a la derecha/izquierda. */
+}
+#contacto p {
+  margin: 20px 10px 20px; /* Aplica arriba, a los lados (derecha/izquierda) y abajo, respectivamente. */
+  font-size: 16px;
+}
+
+#contacto .containercon {
+  justify-content: center;
+  align-items: center;
+  padding: 60px 60px; /* dos valores es el 1° arriba-abajo y el 2° izq-der */
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* width: 300px; */
+  padding: 20px;
+}
+
+#contacto input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+#contacto label {
+  padding: 10px;
+  width: 300px;
+
+}
+
+#contacto textarea {
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+#contacto button {
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #1e991e;
+  margin-top: 20px;
+  color: #ffffff;
+  border: 1px solid #46464698;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 4px 4px 4px #69676746;
+  font-weight: bold;
 }
