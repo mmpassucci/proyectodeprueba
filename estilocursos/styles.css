@@ -148,9 +148,7 @@ header a:hover {
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
   )
-  
   ,url(../assets/imagenes/contentwriter.jpg);
-
 }
 
 
@@ -196,6 +194,7 @@ header a:hover {
   justify-content: center;
   align-items: center;
   padding: 60px 60px; /* dos valores es el 1° arriba-abajo y el 2° izq-der */
+
 }
 
 #contacto form {
@@ -210,19 +209,19 @@ header a:hover {
 
 #contacto input {
   padding: 10px;
-  width: 300px;
+  width: auto;
   border-radius: 10px;
 }
 
 #contacto label {
   padding: 10px;
-  width: 300px;
+  width: auto;
 
 }
 
 #contacto textarea {
   padding: 10px;
-  width: 300px;
+  width: auto;
   border-radius: 10px;
 }
 
@@ -237,4 +236,23 @@ header a:hover {
   text-decoration: none;
   box-shadow: 4px 4px 4px #69676746;
   font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  background-color:#1e991e;
+  margin: 0px;
+  height: 20vh;
+}
+
+footer h4 {
+  margin: 0;
+  padding: 2px;
+  font-size: 0.7em;
+  color: #e7e7e7;
+
 }
