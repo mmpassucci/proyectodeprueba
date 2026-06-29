@@ -135,6 +135,10 @@ header a:hover {
       box-shadow: 4px 4px 4px #69676746;
       border-radius: 8px;
       align-content: center;
+         background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #e7e7e7;
      
 }
 
@@ -146,10 +150,7 @@ header a:hover {
   )
   
   ,url(../assets/imagenes/contentwriter.jpg);
-   background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: #e7e7e7;
+
 }
 
 
@@ -160,10 +161,7 @@ header a:hover {
     rgba(0,0,0,0.5)
   )
   ,url(../assets/imagenes/fullstack.jpg) ;
-   background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: #e7e7e7;
+
 }
 
 .carta-tres {
@@ -173,10 +171,7 @@ header a:hover {
     rgba(0,0,0,0.5)
   )
   ,url(../assets/imagenes/uxuidesigner.jpg) ;
-   background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: #e7e7e7;
+ 
 }
 .carta p {
   padding: 0px 0px 15px 0px;
