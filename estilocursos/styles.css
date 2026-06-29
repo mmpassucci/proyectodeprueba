@@ -6,6 +6,9 @@
   box-sizing: border-box; /* cuando agrego padding o margin a mis elementos esto hace que no crezcan mas de esos valores que les di */
 }
 
+html {
+  scroll-behavior: smooth; /* este efecto es para que al hacer clic en los # lleve a la seccion de manera mas suave*/
+}
 body {
   font-family: "SN Pro", sans-serif;
   margin: 0;
@@ -113,43 +116,77 @@ header a:hover {
 
 /* sección cards */
 
-#cards {
-  background-color: #f7f7f7;
-}
-
 #cards .containercursos {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  text-align: center;
+  background-color: #f7f7f7;
+   display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      text-align: center;
+      color: #042504;
 }
 
-.cartas {
-  height: 360px;
-  border: 1px solid #8d8d8d;
-  padding: 0px 15px 0px 15px; /*Arriba, Derecha, Abajo e Izquierda */
-  gap: 15px;
-  margin: 15px;
-  box-shadow: 4px 4px 4px #69676746;
-  border-radius: 8px;
-  align-content: center;
-  color: #084108;
+  .carta {
+      height: 360px;
+      border: 1px solid #8d8d8d;
+      padding: 0px 15px 0px 15px; /*Arriba, Derecha, Abajo e Izquierda */
+      gap: 15px;
+      margin: 15px;
+      box-shadow: 4px 4px 4px #69676746;
+      border-radius: 8px;
+      align-content: center;
+     
 }
 
-.cartas p {
+.carta-uno {
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  
+  ,url(../assets/imagenes/contentwriter.jpg);
+   background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #e7e7e7;
+}
+
+
+.carta-dos {
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(../assets/imagenes/fullstack.jpg) ;
+   background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #e7e7e7;
+}
+
+.carta-tres {
+   background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(../assets/imagenes/uxuidesigner.jpg) ;
+   background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #e7e7e7;
+}
+.carta p {
   padding: 0px 0px 15px 0px;
   font-size: 16px;
 }
 
-.tituloscards {
-  color: #1e991e;
-}
-
 /*seccion #contacto */
 #contacto {
-  background-color: #534d4d;
-  color: #e7e7e7;
+  background-color: #e7e7e7;
+  color: #534d4d;
   text-align: center;
 }
 #contacto h2 {
