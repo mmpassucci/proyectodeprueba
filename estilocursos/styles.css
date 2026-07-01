@@ -20,7 +20,7 @@ h1 {
   color: #ffffff;
   padding: 8px;
   text-wrap: pretty;
-} 
+}
 
 h2 {
   font-size: 2em;
@@ -45,7 +45,6 @@ h3 {
   text-decoration: none;
   box-shadow: 4px 4px 4px #69676746;
   font-weight: bold;
-
 }
 
 .boton:hover {
@@ -118,28 +117,26 @@ header a:hover {
 
 #cards h2 {
   padding: 20px 0px 20px 0px;
-    text-align: center;
-
+  text-align: center;
 }
 
- #cards .carta {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #042504;
-      height: 360px;
-      width: auto;
-      border: 1px solid #8d8d8d;
-      padding: 0px 15px 0px 15px; /*Arriba, Derecha, Abajo e Izquierda */
-      margin: 5px 10px; /*Arriba/abajo - Derecha/Izquierda (cuando hay dos valores)*/
-      box-shadow: 4px 4px 4px #69676746;
-      border-radius: 8px;
-      background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: #e7e7e7;
-     
+#cards .carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #042504;
+  height: 360px;
+  width: auto;
+  border: 1px solid #8d8d8d;
+  padding: 0px 15px 0px 15px; /*Arriba, Derecha, Abajo e Izquierda */
+  margin: 5px 10px; /*Arriba/abajo - Derecha/Izquierda (cuando hay dos valores)*/
+  box-shadow: 4px 4px 4px #69676746;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #e7e7e7;
 }
 
 .tituloscards {
@@ -147,33 +144,21 @@ header a:hover {
 }
 
 .carta-uno {
-  background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-  )
-  ,url(../assets/imagenes/contentwriter.jpg);
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/imagenes/contentwriter.jpg);
 }
 
-
 .carta-dos {
-    background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-  )
-  ,url(../assets/imagenes/fullstack.jpg) ;
-
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/imagenes/fullstack.jpg);
 }
 
 .carta-tres {
-   background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-  )
-  ,url(../assets/imagenes/uxuidesigner.jpg) ;
- 
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/imagenes/uxuidesigner.jpg);
 }
 .carta p {
   padding: 15px;
@@ -203,7 +188,6 @@ header a:hover {
   align-items: center;
   padding: 40px 40px; /* dos valores es el 1° arriba-abajo y el 2° izq-der */
   font-size: 0.8em;
-
 }
 
 #contacto form {
@@ -216,19 +200,18 @@ header a:hover {
 
 #contacto input {
   padding: 10px;
-  width: auto;
+  width: 400px;
   border-radius: 10px;
 }
 
 #contacto label {
   padding: 10px;
   width: auto;
-
 }
 
 #contacto textarea {
   padding: 10px;
-  width: auto;
+  width: 400px;
   border-radius: 10px;
 }
 
@@ -251,7 +234,7 @@ footer {
   justify-content: center;
   justify-items: center;
   text-align: center;
-  background-color:#1e991e;
+  background-color: #1e991e;
   margin: 0px;
   height: 20vh;
 }
@@ -261,68 +244,65 @@ footer h4 {
   padding: 2px;
   font-size: 0.7em;
   color: #e7e7e7;
-
 }
 
 /* media query */
 
 @media (min-width: 720px) {
   header .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
- 
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-header nav {
-  /* display: flex; */
-  flex-direction: row;
- padding-bottom: 0;
- padding-right: 20px;
-}
+  header nav {
+    /* display: flex; */
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
 
-header {
-  position: fixed;
-  width:100%; /* al fijar la posicion del header debo dar el 100% de ancho */
-}
+  header {
+    position: fixed;
+    width: 100%; /* al fijar la posicion del header debo dar el 100% de ancho */
+  }
 
-#cards .containercursos{
-display: flex;
-justify-content: center;
-align-items: center;
-  background-color: #ffffff;
-  padding-bottom: 10px;
-}
+  #cards .containercursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+  }
 
- #cards .carta {
-  font-size: 1em;
-  /* width: 30%; */
-  text-align: center;
-  font-size: 0.8em;
-   /* padding: 0px 2px 0px 2px; Arriba, Derecha, Abajo e Izquierda */
+  #cards .carta {
+    font-size: 1em;
+    /* width: 30%; */
+    text-align: center;
+    font-size: 0.8em;
+    /* padding: 0px 2px 0px 2px; Arriba, Derecha, Abajo e Izquierda */
     margin: 1px 4px; /*Arriba/abajo - Derecha/Izquierda (cuando hay dos valores)*/
-}
+  }
 
-.carta p {
-  padding: px;
-  font-size: 0.9em;
-  width: 90%;
-  height: auto;
-  text-wrap: wrap;
-  /* text-wrap: pretty; */
-  text-align: center;
-}
+  .carta p {
+    padding: px;
+    font-size: 0.9em;
+    width: 90%;
+    height: auto;
+    text-wrap: wrap;
+    /* text-wrap: pretty; */
+    text-align: center;
+  }
 
-.carta h3 {
-  font-size: 1.8em;
-}
+  .carta h3 {
+    font-size: 1.8em;
+  }
 
-#cards .carta-dos h3 {
-  font-size: 1.5em;
-}
+  #cards .carta-dos h3 {
+    font-size: 1.5em;
+  }
 
-.boton {
-  font-size: 1.2em;
-
-}
+  .boton {
+    font-size: 1.2em;
+  }
 }
